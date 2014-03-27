@@ -1,0 +1,134 @@
+.introSection {
+  @extend .color-transition;
+  background: $intro-background-color;
+  text-align: center;
+  position: relative;
+
+  .content {
+    -webkit-animation-delay: $animate-first;
+    animation-delay: $animate-first;
+  }
+
+  .subhead {
+    @extend .lead;
+    @extend .light-text;
+    @extend .no-margin-bottom;
+    font-size: 18px;
+    color: darken($subhead-text-color, 10);
+
+    @media(min-width: $screen-sm){
+      font-size: 20px;
+      color: $subhead-text-color;
+    }
+  }
+
+  h1 {
+    color: $bioSection-header-color;
+    margin-top: 0px;
+    font-size: 34px;
+    letter-spacing: -2px;
+
+    @media(min-width: $screen-sm){
+      font-size: 5em;
+    }
+  }
+}
+
+.bioSection {
+  .content {
+    -webkit-animation-delay: $animate-second;
+    animation-delay: $animate-second;
+    .header {
+      color: $bioSection-header-color;
+      margin-top: 35px;
+      &:first-child {
+        margin-top: 0px;
+      }
+    }
+    p {
+      line-height: 1.6;
+      font-size: 1.15em;
+      font-weight: 200;
+      color: $footer-background-color;
+
+      @media(min-width: $screen-sm){
+        font-size: 1.25em;
+        line-height: 1.75;
+      }
+    }
+  }
+}
+
+.connectionDrop {
+  &.drop-element.drop-theme-arrows-bounce .drop-content,
+   .drop-content {
+    @extend .lead;
+    color: $bioSection-header-color;
+    padding: 8px;
+  }
+}
+
+.connectionsSection {
+  -webkit-animation-delay: $animate-second;
+  animation-delay: $animate-second;
+  padding-top: 0px;
+
+  ul {
+    text-align: center;
+    margin-bottom: 0px;
+
+    li {
+      a {
+        @extend .color-transition;
+        $social-icon-padding: 20px;
+        display: inline-block;
+        font-size: 40px;
+        color: $footer-background-color;
+
+        margin: 20px;
+
+        @media(min-width: $screen-sm){
+          margin-left: $social-icon-padding;
+          margin-right: $social-icon-padding;
+        }
+
+        span {
+          display: none;
+        }
+
+        &:hover {
+          color: darken($footer-background-color, 10);
+          text-decoration: none;
+        }
+        &:active {
+          color: darken($footer-background-color, 20);
+        }
+      }
+    }
+  }
+}
+
+.footerSection {
+  @extend .color-transition;
+  background: $footer-background-color;
+  color: $background-color;
+
+  .content {
+    -webkit-animation-delay: $animate-third;
+    animation-delay: $animate-third;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    @media(min-width: $screen-sm){
+      margin-bottom: 8px;
+    }
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}

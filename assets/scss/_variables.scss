@@ -1,0 +1,19 @@
+//Colors
+$base-color              : #ededed;
+$intro-background-color  : $base-color;
+$footer-background-color : darken($base-color, 32);
+
+$background-color        : darken(white, 2);
+$light-text-color        : lighten(#575757, 35);
+$subhead-text-color      : $light-text-color;
+$footer-text-color       : $background-color;
+$bioSection-header-color : darken($footer-background-color, 15);
+
+//Padding
+$section-padding-sm      : 35px;
+$section-padding-lg      : 47px;
+
+//Animation
+$animate-first           : .25s;
+$animate-second          : .55s;
+$animate-third           : .85s;

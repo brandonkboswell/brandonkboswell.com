@@ -1,0 +1,7 @@
+{
+  "jquery"     : "assets/components/jquery/dist/jquery.js",
+  "bootstrap"  : "assets/components/bootstrap-sass/vendor/assets/javascripts/bootstrap.js",
+  "underscore" : "assets/components/lodash/dist/lodash.underscore.js",
+  "drop"       : "assets/js/drop.js",
+  "main"       : "assets/js/main.js"
+}
